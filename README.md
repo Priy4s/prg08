@@ -32,7 +32,7 @@ npm install
 Start de server op poort 3000:
 ```bash
 cd ../server
-node --env-file=.env --watch server.js
+node --env-file=.env server.js
 ```
 
 ## Client Starten
