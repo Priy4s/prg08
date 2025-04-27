@@ -7,7 +7,7 @@ cd prg08
 ```
 
 ## Environment Setup
-Maak een `.env` bestand in de rootmap en voeg de volgende variabelen toe:
+Maak een `.env` bestand in de servermap en voeg de volgende variabelen toe:
 ```env
 AZURE_OPENAI_API_VERSION=je_api_versie
 AZURE_OPENAI_API_INSTANCE_NAME=je_instance_naam
@@ -32,7 +32,7 @@ npm install
 Start de server op poort 3000:
 ```bash
 cd ../server
-node --env-file=.env --watch server.js
+node --env-file=.env server.js
 ```
 
 ## Client Starten
