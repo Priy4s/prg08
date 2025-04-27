@@ -12,7 +12,7 @@ app.use(express.json());
 let mode = "ft";
 let gameRules = "";
 
-// Separate message arrays for each mode
+
 const messagesFT = [
     new SystemMessage(`You are playing French Toast. Follow these rules STRICTLY:
 
@@ -44,7 +44,7 @@ const messagesFT = [
     - You don't mention it. Just sound like a jerk who cares.)`)
 ];
 
-const messagesGC = []; // New array for Game Creation Mode
+const messagesGC = [];
 
 const model = new AzureChatOpenAI({ temperature: 0.6 });
 const embeddings = new AzureOpenAIEmbeddings({
